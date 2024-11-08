@@ -5,7 +5,7 @@ import { router } from "./router/router.js";
 const app = express();
 
 const corsOptions = {
-  origin: process.env.DEV == "P"? "http://localhost:5173" : "https://mern-red.vercel.app",
+  origin: process.env.DEV == "P"? "http://localhost:5173" : "https://mern-frontend-ashy-seven.vercel.app",
   credentials: true,
 };
 
