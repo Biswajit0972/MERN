@@ -71,7 +71,7 @@ export const Login = asyncHandler(async (req, res) => {
   const cookieOptions = {
     httpOnly: true,
     secure: true,
-    sameSite: "None",
+    sameSite: "Lax",
   }
 
   res.status(200).cookie("ref", refreshToken, cookieOptions).cookie('ac', accessToken, cookieOptions).send({user: updateUser})
