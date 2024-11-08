@@ -8,7 +8,7 @@ export const isUserLogin = asyncHandler(async (req, _, next) => {
         const token =
           req.cookies?.ac ||
           req.header("Authorization")?.replace("Bearer ", "");
-          console.log(token);
+          // console.log(token);
         // If no token is found, throw an unauthorized error
       
         if (!token) {
